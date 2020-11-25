@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Card Card</title>
+</head>
+<script>
+
+    function changeBgColor(colorId) {
+        document.getElementById('image').style.background = colorId
+    }
+
+    function ChangeTShirt(tShirtName) {
+        document.getElementById("activeTshirt").src= "./image/" +tShirtName
+    }
+
+</script>
+
+<body>
+    <!-- Card of t-shirt  -->
+    <div class="card">
+        <div class="box">
+            <div id="image">
+                <img id="activeTshirt" src="./image/navyBlueshirt.png">
+            </div>
+            <div class="content">
+                <h4> Backround Color</h4>
+                <ul>
+                    <li>
+                        <button onclick='changeBgColor( "linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)" )' class="color1"></button>
+                    </li>
+                    <li>
+                        <button onclick='changeBgColor( "linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)" )' class="color2"></button>
+                    </li>
+                    <li>
+                        <button onclick='changeBgColor( "linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%)" )' class="color3"></button>
+                    </li>
+                    <li>
+                        <button onclick='changeBgColor( "linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%)" )' class="color4"></button>
+                    </li>
+                    <li>
+                        <button onclick='changeBgColor( "linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%)" )' class="color5"></button>
+                    </li>
+                </ul>
+
+                <h4> T-Shirt Color</h4>
+                <ul>
+                    <li>
+                        <button onclick='ChangeTShirt( "navyBlueshirt.png" )' class="t-Shirt-color1"></button>
+                    </li>
+                    <li>
+                        <button onclick='ChangeTShirt( "black-shirt.png" )' class="t-Shirt-color2"></button>
+                    </li>
+                    <li>
+                        <button onclick='ChangeTShirt( "grey-shirt.png" )' class="t-Shirt-color3"></button>
+                    </li>
+                    <li>
+                        <button onclick='ChangeTShirt( "white-shirt.png" )' class="t-Shirt-color4"></button>
+                    </li>
+                    <li>
+                        <button onclick='ChangeTShirt( "blue.png" )' class="t-Shirt-color5"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>
